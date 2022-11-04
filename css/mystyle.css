@@ -1,2 +1,4 @@
-<!DOCTYPE css>
-
+header h1 {
+    display: flex;
+    justify-content: center;
+}
