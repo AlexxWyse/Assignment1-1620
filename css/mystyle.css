@@ -58,3 +58,11 @@ div.info button {
     border-color: transparent; 
     color: black;
 }
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Xanh Mono', monospace;
+}
