@@ -1,4 +1,11 @@
-header h1 {
-    display: flex;
-    justify-content: center;
+body {
+    background-color: #F9F3EC;
+    display: grid;
+    grid-column: 1fr 4fr;
+    grid-template-rows: 1fr;
 }
+
+header h1 {
+    text-align: center;
+}
+
