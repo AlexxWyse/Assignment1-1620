@@ -20,6 +20,7 @@ button {
     padding: 10px;
     background-color: #55869B;
     border-style: solid;
+    color:white
 }
 
 button.darktheme {
@@ -55,4 +56,5 @@ div.info {
 div.info button {
     background-color: #D9827C;
     border-color: transparent; 
+    color: black;
 }
