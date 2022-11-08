@@ -35,5 +35,16 @@ div.textarea {
     margin-top: 5px;
 }
 
+div.secondbuttons {
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;
+    gap: 8px;
+}
+
+button.cancel {
+    background-color: #A267DA;
+}
+
 
 
