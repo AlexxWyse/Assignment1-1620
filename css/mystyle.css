@@ -1,13 +1,14 @@
 body {
     background-color: #D9827C;
     display: grid;
-    grid-column: 1fr 4fr;
+    grid-template-columns:1fr 4fr;
     grid-template-rows: 1fr;
     margin:0px
 }
 
 main {
     grid-column: 2/2;
+    padding-right: 10px;
 }
 
 header h1 {
@@ -65,6 +66,7 @@ div.info button {
 }
 
 footer {
+    grid-column: 2/2;
     text-align: center;
 }
 
@@ -77,11 +79,10 @@ aside {
     font-family: 'Poor Story', cursive;
     background-color: lightpink;
     height:100vh;
-    grid-row: 1/1;
+    grid-row: 1/12;
     margin-right: 10px;
 }
 
 aside h2 {
     text-align: center;
-    border-bottom: black dashed 2px;
 }
