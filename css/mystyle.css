@@ -25,4 +25,8 @@ button {
 button.darktheme {
     background-color: #6F6A87;
 }
+textarea {
+    border-style:solid;
+    border-width: 2px;
+}
 
