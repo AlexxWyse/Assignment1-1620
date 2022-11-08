@@ -86,5 +86,6 @@ aside {
 }
 
 aside ul {
-
+    text-align: left;
+    list-style-type: square;
 }
