@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-column: 1fr 4fr;
     grid-template-rows: 1fr;
+    margin:0px
 }
 
 main {
@@ -71,7 +72,16 @@ footer p {
     font-family: 'Xanh Mono', monospace;
 }
 
-aside h2 {
+aside {
     grid-column: 1/1;
     font-family: 'Poor Story', cursive;
+    background-color: lightpink;
+    height:100vh;
+    grid-row: 1/1;
+    margin-right: 10px;
+}
+
+aside h2 {
+    text-align: center;
+    border-bottom: black dashed 2px;
 }
