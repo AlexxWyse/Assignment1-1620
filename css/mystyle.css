@@ -68,6 +68,7 @@ div.info button {
 footer {
     grid-column: 2/2;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 footer p {
@@ -81,8 +82,9 @@ aside {
     height:100vh;
     grid-row: 1/12;
     margin-right: 10px;
+    text-align: center;
 }
 
-aside h2 {
-    text-align: center;
+aside ul {
+
 }
