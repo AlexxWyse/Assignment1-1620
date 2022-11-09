@@ -90,3 +90,21 @@ aside ul {
     list-style-type: square;
     text-align: left;
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+    }
+    aside {
+        grid-column: 1/1;
+        grid-row: 1/2;
+        border: 0px;
+    }
+    main {
+        grid-column: 2/2;
+    }
+    footer {
+        grid-column: 2/2;
+    }
+}
