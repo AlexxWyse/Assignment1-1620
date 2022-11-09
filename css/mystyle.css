@@ -94,18 +94,22 @@ aside ul {
 @media screen and (min-width: 600px) {
     body {
         grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
     }
     aside {
         grid-column: 1/1;
-        grid-row: 1/4;
+        grid-row: 1/5;;
         border: 0px;
         margin: 0px;
         border-right: 2px solid;
+        height: 150%;
     }
     main {
         grid-column: 2/2;
+        grid-row: 1/3;
     }
     footer {
         grid-column: 2/2;
+        grid-row: 4/4;
     }
 }
