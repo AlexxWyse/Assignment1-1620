@@ -6,7 +6,8 @@ const asideTheme = document.querySelector("aside");
 const infoButtons = document.querySelectorAll(".aboutdoc");
 const NoteCreate = document.querySelector("#newnote");
 const textArea = document.querySelector("textarea");
-const AsideList = document.querySelector("ul")
+const AsideList = document.querySelector("ul");
+ 
 
 let NoteArray = [{
     title: "note one",
@@ -40,18 +41,25 @@ function display() {
     textArea.classList.remove("hidden");
     cancelButton.classList.remove("hidden");
     Button[4].classList.remove("hidden");
+    textArea.value = "This is a Placeholder. . ."
 }
 
-NoteCreate.addEventListener("click", display)
+NoteCreate.addEventListener("click", display);
 
 function SaveNote() {
-    let usertitle = prompt('What would you like to call this note: ')
-    NoteArray.push({title: usertitle, body: textArea.value})
-    let ListItem = document.createElement("li")
-    let StoreContent = document.createTextNode(usertitle)
-    ListItem.appendChild(StoreContent)
-    AsideList.appendChild(ListItem)
-    console.log(NoteArray)
+    let usertitle = prompt('What would you like to call this note: ');
+    NoteArray.push({title: usertitle, body: textArea.value});
+    let ListItem = document.createElement("li");
+    let StoreContent = document.createTextNode(usertitle);
+    ListItem.appendChild(StoreContent);
+    AsideList.appendChild(ListItem);
+    console.log(NoteArray);
 }
 
-Button[4].addEventListener("click", SaveNote)
+Button[4].addEventListener("click", SaveNote);
+
+function DisplayNote(note) {
+
+}
+
+
