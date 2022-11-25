@@ -6,8 +6,12 @@ const asideTheme = document.querySelector("aside");
 const infoButtons = document.querySelectorAll(".aboutdoc");
 const NoteCreate = document.querySelector("#newnote");
 const textArea = document.querySelector("textarea");
+const AsideList = document.querySelector("ul")
 
-let NoteSet = [];
+let NoteArray = [{
+    title: "note one",
+    body: "this is my first note"
+}];
 
 
 function DarkTheme() {
@@ -39,3 +43,15 @@ function display() {
 }
 
 NoteCreate.addEventListener("click", display)
+
+function SaveNote() {
+    let usertitle = prompt('What would you like to call this note: ')
+    NoteArray.push({title: usertitle, body: textArea.value})
+    let ListItem = document.createElement("li")
+    let StoreContent = document.createTextNode(usertitle)
+    ListItem.appendChild(StoreContent)
+    AsideList.appendChild(ListItem)
+    console.log(NoteArray)
+}
+
+Button[4].addEventListener("click", SaveNote)
