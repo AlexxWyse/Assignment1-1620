@@ -19,7 +19,7 @@ function DarkTheme() {
     asideTheme.classList.toggle("darkthemeaside");
     infoButtons[0].classList.toggle("darkthemebody");
     infoButtons[1].classList.toggle("darkthemebody");
-    textArea.classList.toggle("darkthemebutton");
+    textArea.classList.toggle("textareadarktheme");
 };
 
 darkThemeContainer.addEventListener("click", DarkTheme);

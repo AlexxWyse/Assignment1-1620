@@ -134,3 +134,7 @@ aside ul {
 .hidden {
     display: none;
 }
+
+.textareadarktheme {
+    background-color: lightgray;    
+}
