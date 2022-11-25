@@ -1,5 +1,5 @@
 body {
-    background-color: #D9827C;
+    background-color: #F3E9DE;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:1fr 0.2fr;
@@ -51,7 +51,7 @@ div.secondbuttons {
 }
 
 button.cancel {
-    background-color: #A267DA;
+    background-color: #9b332c;
 }
 
 div.info {
@@ -61,7 +61,7 @@ div.info {
 }
 
 div.info button {
-    background-color: #D9827C;
+    background-color: #F3E9DE;
     border-color: transparent; 
     color: black;
 }
@@ -79,7 +79,7 @@ footer p {
 aside {
     grid-row: 2/2;
     font-family: 'Poor Story', cursive;
-    background-color: lightpink;
+    background-color: #faf4ec;
     margin: 10px;
     text-align: center;
     margin-top: 10px;
