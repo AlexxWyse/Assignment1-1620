@@ -30,7 +30,7 @@ button {
     color:white
 }
 
-button.darktheme {
+.darktheme {
     background-color: #6F6A87;
 }
 
@@ -40,6 +40,7 @@ textarea{
     height: 100px;
     border: 2px;
     padding-top: 5px;
+    margin-top: 5px;
 }
 
 div.secondbuttons {
@@ -49,7 +50,7 @@ div.secondbuttons {
     gap: 8px;
 }
 
-button.cancel {
+.cancel {
     background-color: #9b332c;
 }
 
@@ -59,7 +60,7 @@ div.info {
     justify-content: right;
 }
 
-div.info button {
+.aboutdoc {
     background-color: #F3E9DE;
     border-color: transparent; 
     color: black;
@@ -132,4 +133,5 @@ aside ul {
     background-color: grey;
     color: white;
 }
+
 
