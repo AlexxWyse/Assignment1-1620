@@ -24,10 +24,18 @@ function DarkTheme() {
 
 darkThemeContainer.addEventListener("click", DarkTheme);
 
-function display() {
+function hidden() {
     textArea.classList.add("hidden");
     cancelButton.classList.add("hidden");
     Button[4].classList.add("hidden");
 }
 
-cancelButton.addEventListener("click", display);
+cancelButton.addEventListener("click", hidden);
+
+function display() {
+    textArea.classList.remove("hidden");
+    cancelButton.classList.remove("hidden");
+    Button[4].classList.remove("hidden");
+}
+
+NoteCreate.addEventListener("click", display)
