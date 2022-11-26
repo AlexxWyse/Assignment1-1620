@@ -41,7 +41,7 @@ function display() {
     textArea.classList.remove("hidden");
     cancelButton.classList.remove("hidden");
     Button[4].classList.remove("hidden");
-    textArea.value = "This is a Placeholder. . ."
+    textArea.value = ""
 }
 
 NoteCreate.addEventListener("click", display);
