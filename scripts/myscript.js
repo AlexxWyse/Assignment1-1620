@@ -29,6 +29,11 @@ function DarkTheme() {
     infoButtons[0].classList.toggle("darkthemebody");
     infoButtons[1].classList.toggle("darkthemebody");
     textArea.classList.toggle("textareadarktheme");
+    if (darkThemeContainer.classList.contains("darkthemecancel")) {
+        darkThemeContainer.innerText = "Light Theme";
+    } else {
+        darkThemeContainer.innerText = "Dark Theme";
+    }
 };
 
 darkThemeContainer.addEventListener("click", DarkTheme);
