@@ -7,11 +7,15 @@ const infoButtons = document.querySelectorAll(".aboutdoc");
 const NoteCreate = document.querySelector("#newnote");
 const textArea = document.querySelector("textarea");
 const AsideList = document.querySelector("ul");
- 
+const log = console.log;
 
 let NoteArray = [{
-    title: "note one",
+    title: "Note 1",
     body: "this is my first note"
+},
+{
+    title: "Note 2",
+    body: "this is my second note"
 }];
 
 
@@ -41,7 +45,7 @@ function display() {
     textArea.classList.remove("hidden");
     cancelButton.classList.remove("hidden");
     Button[4].classList.remove("hidden");
-    textArea.value = ""
+    textArea.value = "";
 }
 
 NoteCreate.addEventListener("click", display);
@@ -53,13 +57,23 @@ function SaveNote() {
     let StoreContent = document.createTextNode(usertitle);
     ListItem.appendChild(StoreContent);
     AsideList.appendChild(ListItem);
-    console.log(NoteArray);
+    log(NoteArray);
 }
 
 Button[4].addEventListener("click", SaveNote);
 
-function DisplayNote(note) {
-
+function DisplayNote(e) {
+    let licontent = e.target.innerText;
+    
+    for (let note = 0; note <= NoteArray.length - 1; note++) {
+        // if title is = li then display
+        if (NoteArray[note].title === licontent) {
+            textArea.value = NoteArray[note].body
+            // let correctcontent = (note.title[body]);
+        }
+    }
 }
+
+AsideList.addEventListener("click", DisplayNote);
 
 
