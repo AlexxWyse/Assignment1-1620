@@ -16,19 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
       rel="stylesheet"
     >
+    <script src="scripts/myscript.js" defer></script>
   </head>
   <body>
     <main>
       <header>
         <h1>Take Better Notes</h1>
       </header>
-      <div class="info"><button>About</button><button>Docs</button></div>
+      <div class="info"><button class="aboutdoc">About</button><button class="aboutdoc">Docs</button></div>
       <div class="firstbuttons">
-        <button>New Note</button><button class="darktheme">Dark Theme</button>
+        <button id="newnote">New Note</button><button class="darktheme">Dark Theme</button>
       </div>
-      <div class="textarea">This is a placeholder. . .</div>
+      <textarea class="hidden" placeholder="This is a placeholder. . ."></textarea>
       <div class="secondbuttons">
-        <button>Save</button><button class="cancel">Cancel</button>
+        <button class="hidden">Save</button><button class="cancel hidden">Cancel</button>
       </div>
     </main>
     <aside>
