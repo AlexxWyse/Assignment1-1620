@@ -20,16 +20,16 @@ let NoteArray = [{
 
 
 function DarkTheme() {
-    Button[2].classList.toggle("darkthemecancel");
-    Button[3].classList.toggle("darkthemecancel");
-    Button[4].classList.toggle("darkthemecancel");
+    Button[2].classList.toggle("darkthemeblue");
+    Button[3].classList.toggle("darkthemeblue");
+    Button[4].classList.toggle("darkthemeblue");
     DarkBody.classList.toggle("darkthemebody");
-    cancelButton.classList.toggle("darkthemecancel");
+    cancelButton.classList.toggle("darkthemeblue");
     asideTheme.classList.toggle("darkthemeaside");
     infoButtons[0].classList.toggle("darkthemebody");
     infoButtons[1].classList.toggle("darkthemebody");
     textArea.classList.toggle("textareadarktheme");
-    if (darkThemeContainer.classList.contains("darkthemecancel")) {
+    if (darkThemeContainer.classList.contains("darkthemeblue")) {
         darkThemeContainer.innerText = "Light Theme";
     } else {
         darkThemeContainer.innerText = "Dark Theme";
@@ -73,8 +73,7 @@ function DisplayNote(e) {
     for (let note = 0; note <= NoteArray.length - 1; note++) {
         // if title is = li then display
         if (NoteArray[note].title === licontent) {
-            textArea.value = NoteArray[note].body
-            // let correctcontent = (note.title[body]);
+            textArea.value = NoteArray[note].body;
         }
     }
 }
